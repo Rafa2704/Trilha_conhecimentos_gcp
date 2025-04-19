@@ -1,0 +1,12 @@
+config {
+  type: "table",
+  database: "gauge-treinamentos",
+  schema: "trilha_conhecimentos_gcp",
+  name: "CAMADA_BRUTA_CLIENTE",
+  description: "Camada bronze processada a partir de dados_brutos_clientes",
+  tags: ["bronze", "clientes"],
+}
+
+SELECT
+ *
+FROM `gauge-treinamentos.trilha_conhecimentos_gcp.dados_brutos_clientes`
